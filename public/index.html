@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIDNITE CIVIC</title>
+<meta name="description" content="MIDNITE CIVIC: the homepage of one black 2015 Honda Civic, parked in the MotorCity neighborhood.">
+<meta name="keywords" content="Honda, Civic, 2015 Civic, black car, car wash, wax, MotorCity, nostalgia">
+<style>
+body {
+  margin: 0;
+  background: #009966 url(images/tile.svg);
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+}
+a:link { color: #ffcc00; }
+a:visited { color: #99cc99; }
+
+#page {
+  position: absolute;
+  left: 77px;
+  top: 20px;
+  width: 800px;
+  padding-bottom: 40px;
+}
+
+/* the 800x600 splash: one big picture with everything laid on top */
+.splash {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  aspect-ratio: 4 / 3;
+  container-type: inline-size;
+}
+.splash .scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+.nav { position: absolute; left: 1.9%; top: 1.6%; margin: 0; padding: 0; list-style: none; }
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 1.6cqw;
+  height: 7cqw;
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+  font-size: 4.1cqw;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav a:link, .nav a:visited { color: #ffff00; }
+.nav a:hover { color: #ffffff; }
+.nav img { width: 6.25cqw; height: 6.25cqw; }
+
+.outlined {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 3px 3px 0 #000;
+}
+
+.swirl { position: absolute; left: 60%; top: 55%; width: 30%; }
+.logo {
+  position: absolute;
+  left: 55%;
+  top: 71%;
+  margin: 0;
+  transform: rotate(-9deg);
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+  font-size: 6cqw;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.95;
+  color: #f01010;
+  -webkit-text-stroke: 1.5px #2a0000;
+  text-shadow: 3px 3px 0 #ffffff, 5px 5px 0 #000000;
+}
+.logo span { display: block; padding-left: 7cqw; }
+.flag { position: absolute; left: 78.5%; top: 12%; width: 20%; }
+.hello {
+  position: absolute;
+  left: 80.5%;
+  top: 31%;
+  width: 19%;
+  margin: 0;
+  font-family: "Lucida Handwriting", "Segoe Script", "Apple Chancery", "Brush Script MT", cursive;
+  font-size: 2.2cqw;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #ffff33;
+  text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, -1px 0 0 #000;
+}
+
+/* everything under the splash */
+.road { display: block; margin: 22px auto; max-width: 100%; height: auto; }
+.box {
+  background: #000000;
+  border: 5px ridge #33cc99;
+  padding: 6px 22px 16px;
+}
+.box h2 {
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+  font-size: 26px;
+  font-style: italic;
+  color: #ffff00;
+}
+.box li { margin-bottom: 6px; }
+.up { text-align: right; font-size: 10pt; }
+.specs { border-collapse: separate; }
+.specs th { background: #009966; color: #ffff00; text-align: left; padding: 6px 12px; }
+.specs td { padding: 6px 12px; }
+.countdown { font-size: 13pt; }
+
+.footer { text-align: center; background: #000000; padding: 4px 16px; }
+.counter {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px;
+  background: #222;
+  border: 2px inset #888;
+}
+.counter span {
+  display: inline-block;
+  width: 12px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  background: linear-gradient(#000 0%, #333 50%, #000 100%);
+  border-right: 1px solid #555;
+}
+.counter span:last-child { color: #000; background: linear-gradient(#ccc, #fff 50%, #bbb); border-right: 0; }
+.address { font-family: "Courier New", Courier, monospace; overflow-wrap: anywhere; }
+.credit { font-size: 9pt; color: #cccccc; }
+
+@media (max-width: 900px) {
+  #page { position: static; width: auto; margin: 12px 16px; }
+  .box { padding: 4px 14px 14px; }
+}
+</style>
+</head>
+<body bgcolor="#009966" text="#ffffff" link="#ffcc00" vlink="#99cc99">
+<a id="top"></a>
+<div id="page">
+
+  <div class="splash">
+    <img class="scene" src="images/cover.gif" width="800" height="600" alt="A black Honda Civic sedan parked on the grass next to a cornfield">
+    <ul class="nav outlined">
+      <li><a href="#ride"><img src="images/wheel.gif" alt="">My Ride.....</a></li>
+      <li><a href="pics.html"><img src="images/wheel.gif" alt="">Pics!!.....</a></li>
+      <li><a href="#specs"><img src="images/wheel.gif" alt="">Da Specs....</a></li>
+      <li><a href="#shine"><img src="images/wheel.gif" alt="">Black Magic...</a></li>
+      <li><a href="#top5"><img src="images/wheel.gif" alt="">Top 5 List....</a></li>
+    </ul>
+    <img class="swirl" src="images/swirl.svg" alt="">
+    <h1 class="logo">MIDNITE<span>CIVIC</span></h1>
+    <img class="flag" src="images/flag.svg" alt="Checkered flag">
+    <p class="hello">Pull up a bucket seat! You just cruised into MotorCity, home of one very black, very shiny* Honda...... ......*on a good day</p>
+  </div>
+
+  <img class="road" src="images/road.svg" width="600" height="24" alt="">
+
+  <div class="box" id="ride">
+    <h2 class="outlined">Welcome 2 My Ride!!!</h2>
+    <p>Hey there, net surfer, and welcome to the one and only home on the World Wide Web for my <b>2015 Honda Civic</b>! She's black, she's sleek, and she lives right here in the MotorCity neighborhood. Wipe your feet (NO mud on the floor mats, please) and stay a while.</p>
+    <p>Yes, you read that right. A 2015. How did a car from the future end up on my homepage? Let's just say the time machine was in the shop and I had to borrow a ride. ;-)</p>
+    <p>I call her <b>MIDNITE</b>, because when she's clean she's so dark she practically disappears after sundown. When she's dirty... well, you can see every speck of pollen from outer space.</p>
+    <p>Wanna see more? Cruise on over to <a href="pics.html">THE PHOTO GARAGE</a> for a whole roll of snapshots, plus the mods I'm saving up for!!</p>
+    <p class="up"><a href="#top">^^ Zoom back up ^^</a></p>
+  </div>
+
+  <img class="road" src="images/road.svg" width="600" height="24" alt="">
+
+  <div class="box" id="specs">
+    <h2 class="outlined">Da Specs</h2>
+    <table class="specs" border="2" cellspacing="2">
+      <tr><th>YEAR</th><td>2015</td></tr>
+      <tr><th>MAKE</th><td>Honda</td></tr>
+      <tr><th>MODEL</th><td>Civic</td></tr>
+      <tr><th>COLOR</th><td>Black. Not "charcoal." Not "dark gray." BLACK.</td></tr>
+      <tr><th>NICKNAME</th><td>Midnite</td></tr>
+      <tr><th>COOLNESS</th><td>10 out of 10 (I measured)</td></tr>
+      <tr><th>TOP SPEED</th><td>Whatever the sign says, officer!!</td></tr>
+    </table>
+    <p>More stats coming soon! This part of the page is still being built, just like Rome.</p>
+    <p class="up"><a href="#top">^^ Zoom back up ^^</a></p>
+  </div>
+
+  <img class="road" src="images/road.svg" width="600" height="24" alt="">
+
+  <div class="box" id="shine">
+    <h2 class="outlined">Black Magic: How 2 Keep a Black Car Black</h2>
+    <p>Owning a black car is like owning a giant mirror that LOVES dust. Here's what I learned the hard way:</p>
+    <ul>
+      <li><b>Wash in the shade.</b> Hot sun dries the soap into spots faster than you can say "Netscape Navigator."</li>
+      <li><b>Use two buckets.</b> One for soapy water, one for plain water to rinse your mitt. Otherwise you're just rubbing grit all over the paint.</li>
+      <li><b>Microfiber ONLY.</b> Old T-shirts and paper towels leave teeny swirl marks, and on black paint every swirl shows up like a spiderweb.</li>
+      <li><b>Dry her right away</b> with a big soft towel. Letting her air dry = water spots city.</li>
+      <li><b>Wax every couple of months.</b> The rain beads up and rolls right off and it looks AWESOME.</li>
+    </ul>
+    <p>Do all that and she'll shine so bright you can check your hair in the door. Trust me, I do it every morning.</p>
+    <p class="up"><a href="#top">^^ Zoom back up ^^</a></p>
+  </div>
+
+  <img class="road" src="images/road.svg" width="600" height="24" alt="">
+
+  <div class="box" id="top5">
+    <h2 class="outlined">Top 5 Reasons My Civic Rulez</h2>
+    <ol class="countdown" reversed>
+      <li>She sips gas like a hummingbird, which leaves more allowance for pizza and arcade tokens.</li>
+      <li>She squeezes into parking spots that make big cars cry.</li>
+      <li>Hondas just keep going and going and going. Move over, pink bunny!</li>
+      <li>Black goes with EVERYTHING. She's basically a tuxedo on wheels.</li>
+      <li>She's MINE!!!</li>
+    </ol>
+    <p class="up"><a href="#top">^^ Zoom back up ^^</a></p>
+  </div>
+
+  <img class="road" src="images/road.svg" width="600" height="24" alt="">
+
+  <div class="footer">
+    <p>You are visitor number <span class="counter" role="img" aria-label="0001997"><span>0</span><span>0</span><span>0</span><span>1</span><span>9</span><span>9</span><span>7</span></span> since the engine turned over!</p>
+    <p>Page built and buffed by yours truly, using nothing but Notepad and elbow grease.</p>
+    <p>&lt;&lt; The MotorCity Black Car Ring &gt;&gt;<br>
+    [ <a href="#top">&lt;&lt; 5 Back</a> | <a href="#top">&lt; Back</a> | <a href="#top">Next &gt;</a> | <a href="#top">5 Ahead &gt;&gt;</a> | <a href="#top">Surprise Me!</a> | <a href="#top">The Whole Lot</a> ]</p>
+    <p>Parked at: <span class="address">https://geocities.restorativland.org/MotorCity/</span></p>
+    <p><small>Best viewed at 800 x 600 with your high beams on.</small></p>
+    <p class="credit">Cover photo and wheel buttons: edited from "Honda (20532645750)" by WabbitWanderer from London, Canada, CC BY-SA 2.0, via Wikimedia Commons. All photo credits are in <a href="pics.html#credits">the Photo Garage</a>.</p>
+  </div>
+
+</div>
+</body>
+</html>
